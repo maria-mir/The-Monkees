@@ -1,0 +1,15 @@
+/* Setting background image to cover whole page */
+
+body, html {
+    margin:0;
+    background-image: url("/assets/images/monkees - Copy.jpg");
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
