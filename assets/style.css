@@ -76,3 +76,39 @@ body, html {
     clear:both; /* for clearing float */
 }
 
+/*  Creating footer */
+
+.footer {
+    border-top: 1px solid grey;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.follow {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.fab {
+    font-size: 40px;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #10265D;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #30C1CD;
+    color: white;
+}
+
+.fa-youtube {
+    background-color: #FB1005;
+    color: white;
+}
