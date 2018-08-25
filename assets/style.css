@@ -1,10 +1,11 @@
-/* Setting background image to cover whole page */
+ /* Setting full screen background image */
 
 body, html {
     margin:0;
-    background-image: url("/assets/images/monkees - Copy.jpg");
+    box-sizing: border-box; /* Not supported in IE6 and IE7 */
     height:100%;
     width:100%;
+    background-image: url("/assets/images/monkees - Copy.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,3 +14,65 @@ body, html {
     background-position: center;
     background-attachment: fixed;
 }
+
+/* Creating navbar */
+
+.navbar {
+    position: relative;
+}
+
+.menu-icon {
+    float: right;
+    padding: 8px;
+    font-size: 30px;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+.menu-content {
+    display: none;
+    list-style-type: none;
+    background-color: grey;
+    width: 200px;
+    padding: 10px 0px;
+    text-align: center;
+    position: absolute;
+    right: 2%;
+    top: 50px;
+}
+.menu-content li {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+.menu-content li:last-child {
+    border-bottom: none;
+}
+.menu-content li a {
+    text-decoration: none;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.menu-icon:hover + .menu-content {
+    display: block;
+}
+.band-name {
+    float: left;
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 11vw;
+}
+
+.clear {
+    clear:both; /* for clearing float */
+}
+
